@@ -1,0 +1,13 @@
+.board {
+	background: black;
+}
+
+.shape {
+	fill: lightBlue;
+	stroke: black;
+	stroke-width: 0;
+}
+
+.shape:hover {
+	fill-opacity: 0.8;
+}
