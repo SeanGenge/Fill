@@ -3,11 +3,19 @@
 }
 
 .shape {
-	fill: lightBlue;
 	stroke: black;
-	stroke-width: 0;
+	stroke-width: 1;
+}
+
+.blue {
+	fill: lightBlue;
+}
+
+.black {
+	fill: black;
 }
 
 .shape:hover {
-	fill-opacity: 0.8;
+	fill-opacity: 0.7;
+	fill: lightCoral;
 }
