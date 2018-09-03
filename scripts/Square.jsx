@@ -6,7 +6,7 @@ export class Square extends React.Component {
 		super(props);
 		
 		this.state = {
-			on: false //Math.random() >= 0.5
+			on: false
 		};
 	}
 	

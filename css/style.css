@@ -17,5 +17,6 @@
 
 .shape:hover {
 	fill-opacity: 0.7;
-	fill: lightCoral;
+	stroke: red;
+	stroke-width: 1.25;
 }
