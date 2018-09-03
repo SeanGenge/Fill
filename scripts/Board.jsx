@@ -42,28 +42,18 @@ export class Board extends React.Component {
 		this.setCurrent = this.setCurrent.bind(this);
 	}
 	
-	componentDidMount() {
-		
-	}
-	
 	scramble(numTimes = 30) {
-		for (let i = 0; i < numTimes; i++) {
+		// Scrambles the board
+		// Calls itself in the callback once the state has been updated
+		// Slow so keep numTimes low
+		if (numTimes > 0) {
 			let x = Math.floor(Math.random() * this.state.numShapes.x);
 			let y = Math.floor(Math.random() * this.state.numShapes.y);
-			let curr = this.state.curr;
-			curr.x = x;
-			curr.y = y;
-			this.forceUpdate();
-			/*this.setState(
-				this.a(curr), () => console.log(curr)
-			);*/
+			
+			this.setState(
+			{curr: {x:x, y: y}}, () => this.scramble(numTimes - 1)
+			);
 		}
-	}
-	
-	a(curr) {
-		return (prevState, props) => {
-			return { ...prevState, curr: curr };
-		};
 	}
 	
 	setCurrent(e, x, y) {
@@ -84,7 +74,7 @@ export class Board extends React.Component {
 						this.state.board.map(shape => (<Square key={shape.key} loc={shape.loc} pos={shape.pos} size={this.state.size} handleClick={this.setCurrent} curr={this.state.curr} />))
 					}
 				</svg>
-				<button onClick={() => this.scramble(2)}>click me</button>
+				<button onClick={() => this.scramble()}>click me</button>
 			</div>
 		);
 	}
