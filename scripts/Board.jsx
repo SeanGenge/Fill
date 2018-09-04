@@ -12,7 +12,7 @@ export class Board extends React.Component {
 		// The size of the svg area
 		let boardSize = 500;
 		// The number of shapes along the x and y-axis
-		let numShapes = { x: 10, y: 10 };
+		let numShapes = { x: 2, y: 2 };
 		// The size will auto adjust so the number of shapes will fit in the board
 		let size = boardSize / ((numShapes.x > numShapes.y ? numShapes.x : numShapes.y)) - 1;
 		// The current shape that was clicked
@@ -68,8 +68,8 @@ export class Board extends React.Component {
 	
 	render() {
 		return (
-			<div>
-				<svg className="board" width={this.state.boardSize} height={this.state.boardSize}>
+			<div className="container">
+<svg className="board" width={this.state.boardSize} height={this.state.boardSize} style={{border: "1px solid purple"}}>
 					{
 						this.state.board.map(shape => (<Square key={shape.key} loc={shape.loc} pos={shape.pos} size={this.state.size} handleClick={this.setCurrent} curr={this.state.curr} />))
 					}

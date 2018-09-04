@@ -15,8 +15,26 @@
 	fill: black;
 }
 
+.purple {
+	fill: purple;
+}
+
+.green {
+	fill: green;
+}
+
 .shape:hover {
 	fill-opacity: 0.7;
 	stroke: red;
 	stroke-width: 1.25;
+}
+
+.container {
+	float: left;
+	position: relative;
+}
+
+.title {
+	color: purple;
+	text-align: center;
 }

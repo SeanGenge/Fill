@@ -6,7 +6,7 @@ export class Square extends React.Component {
 		super(props);
 		
 		this.state = {
-			on: false
+			on: 0
 		};
 	}
 	
@@ -15,7 +15,10 @@ export class Square extends React.Component {
 		if (curr.x != -1 && curr.y != -1) {
 			if (nextProps.pos.x == curr.x || nextProps.pos.y == curr.y) {
 				this.setState((prevState, props) => ({
-					on: !prevState.on
+					// Mod 2 for easy diff (2 colours)
+					// Mod 3 for hard diff (3 colours)
+					// mod 4 for impossible diff (4 colours)
+					on: (prevState.on + 1) % 4
 				}));
 			}
 		}
@@ -23,11 +26,17 @@ export class Square extends React.Component {
 	
 	render() {
 		let className = "shape ";
-		if (this.state.on) {
+		if (this.state.on == 0) {
+			className += "black ";
+		}
+		else if (this.state.on == 1) {
 			className += "blue ";
 		}
+		else if (this.state.on == 2) {
+			className += "purple ";
+		}
 		else {
-			className += "black ";
+			className += "green ";
 		}
 		
 		return (
