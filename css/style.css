@@ -32,6 +32,7 @@
 .container {
 	float: left;
 	position: relative;
+	padding: 5px;
 }
 
 .title {
