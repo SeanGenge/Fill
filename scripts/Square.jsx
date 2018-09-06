@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/style.css';
-let defaultOn = 1;
+let defaultOn = 0;
 
 
 export class Square extends React.Component {
@@ -17,7 +17,11 @@ export class Square extends React.Component {
 	}
 	
 	componentWillReceiveProps(nextProps) {
-		const curr = nextProps.curr;
+		// A check to determine whether a control was clicked
+		// Sometimes the control would update the square state so to avoid this, check whether the curr pos
+		// has changed. If it did not, use -1, -1 for curr to prevent updating
+		let curr = this.props.curr == nextProps.curr ? {x: -1, y: -1} : nextProps.curr;
+		
 		if (curr.x != -1 && curr.y != -1) {
 			if (this.shouldFill(curr, nextProps)) {
 				this.setState((prevState, props) => ({

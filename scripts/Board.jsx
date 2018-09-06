@@ -68,7 +68,10 @@ export class Board extends React.Component {
 		
 		// Scramble the board
 		if (nextProps.scramble) {
-			this.scramble();
+			// Try to scramble the larger boards with more moves than the smaller boards
+			let numTimes = ((this.state.numShapes.x >= 15 ? 15 : this.state.numShapes.x) * (this.state.numShapes.y >= 15 ? 15 : this.state.numShapes.y)) / 2;
+			debugger;
+			this.scramble(numTimes);
 			
 			nextProps.handleScramble(false);
 		}
@@ -77,7 +80,7 @@ export class Board extends React.Component {
 	scramble(numTimes = 30) {
 		// Scrambles the board
 		// Calls itself in the callback once the state has been updated
-		// Slow so keep numTimes low
+		// Can be slow for a larger board
 		if (numTimes > 0) {
 			let x = Math.floor(Math.random() * this.state.numShapes.x);
 			let y = Math.floor(Math.random() * this.state.numShapes.y);

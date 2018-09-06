@@ -3,8 +3,9 @@
 }
 
 .shape {
-	stroke: black;
+	stroke: lightBlue;
 	stroke-width: 1;
+	stroke-opacity: 0.25;
 }
 
 .blue {
@@ -27,6 +28,7 @@
 	fill-opacity: 0.7;
 	stroke: red;
 	stroke-width: 1.25;
+	stroke-opacity: 1;
 }
 
 .container {
