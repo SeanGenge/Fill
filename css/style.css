@@ -5,7 +5,7 @@
 .shape {
 	stroke: lightBlue;
 	stroke-width: 1;
-	stroke-opacity: 0.25;
+	stroke-opacity: 0.3;
 }
 
 .blue {
@@ -17,11 +17,11 @@
 }
 
 .purple {
-	fill: purple;
+	fill: MediumOrchid;
 }
 
 .green {
-	fill: green;
+	fill: SpringGreen;
 }
 
 .shape:hover {
