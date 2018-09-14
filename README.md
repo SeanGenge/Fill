@@ -8,7 +8,7 @@ The game is simple:
 
 Installation to edit the code
 - Download node.js
-- To install the dependencies, go to cmd and navigate to the folder with package.json and type 'npm install --save-dev'
+- To install the dependencies, go to cmd and navigate to the folder with package.json and type 'npm install --save-dev' and 'npm install --save'
 - 'npm run build' will compile the code
 
 index.html is the webpage for the program
