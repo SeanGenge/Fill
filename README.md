@@ -7,8 +7,8 @@ The game is simple:
 - Different ways to make the pattern (full plus or one plus)
 
 Installation to edit the code
-Download node.js
-To install the dependencies, go to cmd and navigate to the folder and type 'npm install --save-dev'
-'npm run build' will compile the code
+- Download node.js
+- To install the dependencies, go to cmd and navigate to the folder and type 'npm install --save-dev'
+- 'npm run build' will compile the code
 
 index.html is the webpage for the program
