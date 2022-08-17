@@ -1,7 +1,7 @@
 # Fill [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-Fill the board with one particular colour. There are different levels of difficulty ranging from Easy to impossible. The difficulties add more colours to the mix. The deployed app can be found here: https://seangenge.github.io/Fill/
+Fill the board with one particular colour. When you click on a square, the entire row and column will change colour. You can even change the mode to only change the colour adjacent to the clicked square. There are different levels of difficulty ranging from Easy to impossible. The difficulties add more colours to the mix. The deployed app can be found here: https://seangenge.github.io/Fill/
 
 ## Table of Contents
 - [Installation](#installation)
