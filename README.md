@@ -1,14 +1,41 @@
-# Fill
-No objective has been coded in the game. You can fill the board with one colour or create a pattern
+# Fill [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-The game is simple:
-- there is a board (3x3 to 25x25)
-- Difficulties which determine how many colours you can cycle through
-- Different ways to make the pattern (full plus or one plus)
+## Description
+Fill the board with one particular colour. There are different levels of difficulty ranging from Easy to impossible. The difficulties add more colours to the mix
 
-Installation to edit the code
-- Download node.js
-- To install the dependencies, go to cmd and navigate to the folder with package.json and type 'npm install --save-dev' and 'npm install --save'
-- 'npm run build' will compile the code
+## Table of Contents
+- [Installation](#installation)
+  
+- [Usage](#usage)
+  
+- [License](#license)
+  
+- [Questions](#questions)
 
-index.html is the webpage for the program
+Fill easy mode
+
+![](./images/fill.png)
+
+Fill hard mode
+
+![](./images/fill_hard.png)
+
+Fill impossible mode
+
+![](./images/fill_impossible.png)
+
+Fill large board
+
+![](./images/fill_large.png)
+
+## Installation
+To install the necessary dependencies, run the following command:
+```
+  npm i
+```
+
+## License
+This project is licensed under the [MIT](https://opensource.org/licenses/MIT) license
+
+## Questions
+If you have any questions about the repo, open an issue or contact me directly at seangenge@gmail.com. You can find more of my work at [seangenge](https://github.com/seangenge).
