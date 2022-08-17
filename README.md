@@ -1,7 +1,7 @@
 # Fill [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-Fill the board with one particular colour. There are different levels of difficulty ranging from Easy to impossible. The difficulties add more colours to the mix
+Fill the board with one particular colour. There are different levels of difficulty ranging from Easy to impossible. The difficulties add more colours to the mix. The deployed app can be found here: https://seangenge.github.io/Fill/
 
 ## Table of Contents
 - [Installation](#installation)
